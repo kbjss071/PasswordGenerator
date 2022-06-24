@@ -11,4 +11,10 @@
 - When all prompts are answered, then a password is generated that matches the selected criteria.
 - When the password is generated, the password is either displayed in an alert or written to the page.
 
-## Work done for this project
+## Works done for this project
+- Assigned lowercase, uppercase, numeric and special characters to individual variables.
+- Initialized variables to store password length and characters that will be randomly generated.
+- Defined the `generatePassword()` function which is called from the function `writePassword()`. The `generatePassword()` function will perform the followings:
+    - Prompt user to enter a number between 8 and 128 to set the length of new password. If the user enters an unallowed number, it will alert the user and ask the user to enter a new number.
+    - Prompt user to determine which character types user wants to include in their password. If no character type is selected, the password will include only uppercase character.
+    - Return a randomly generated password to assign the password to a variable where the `generatePassword()` is called.
